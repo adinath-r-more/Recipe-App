@@ -61,7 +61,7 @@ const openRecipePopup = (meal) =>{
     recipeDetailsContent.innerHTML = `
         <h2>${meal.strMeal}</h2>
         <h3>Ingredients:</h3>
-        <ul>${fetchIngredients(meal)}</ul>
+        <ul>${fetchIngredients(meal)}</ul> 
     `
 
     recipeDetailsContent.parentElement.style.display = "block";
