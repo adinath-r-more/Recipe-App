@@ -40,13 +40,34 @@ const fetchRecipes = async (query) =>{
     });
 }
 
+//Functions to fetch ingredients and measurements
+
+const fetchIngredients = (meal) =>{
+    let ingredientsList = "";
+    for(i=1; i<=10; i++){
+        const ingredient = meal[`strIngredient${i}`];
+        if(ingredient){
+            const measure = meal[`strMeasure${i}`];
+            ingredientsList += `<li>${measure} ${ingredient}</li>`
+        }
+        else{
+            break;
+        }
+    }
+    return ingredientsList;
+}
+
 const openRecipePopup = (meal) =>{
-    recipeDetailsContent.textContent = `
+    recipeDetailsContent.innerHTML = `
         <h2>${meal.strMeal}</h2>
+        <h3>Ingredients:</h3>
+        <ul>${fetchIngredients(meal)}</ul>
     `
 
     recipeDetailsContent.parentElement.style.display = "block";
 }
+
+
 
 SearchBtn.addEventListener("click", (e)=>{
     e.preventDefault(); 
