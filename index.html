@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recipe App - ADI MORE</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f0845f26c0.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
@@ -12,7 +13,7 @@
             <h1>Recipe App</h1>
             <form>
                 <input type="text" placeholder="Search for Recipe..." class="SearchBox">
-                <button type="submit">Search</button>
+                <button type="submit" class="SearchBtn">Search</button>
             </form>
         </nav>
     </header>
@@ -21,6 +22,14 @@
         <section>
             <div class="recipe-container">
                 <h2>Search your favourite Recipes </h2>
+            </div>
+            <div class="recipe-details">
+                <button type="button" class="recipe-close-btn">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+                <div class="recipe-details-content">
+
+                </div>
             </div>
         </section>
     </main>
