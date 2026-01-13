@@ -247,4 +247,15 @@ body::-webkit-scrollbar-track {
         height: 28px;
         font-size: 16px;
     }
+
+    form input[type="text"],
+    button[type="submit"] {
+        font-size: 15px;
+        padding: 12px;
+        border-radius: 4px;
+    }
+
+    .recipe-container h2{
+        font-size: 20px;
+    }
 }
