@@ -237,7 +237,7 @@ body::-webkit-scrollbar-track {
     .recipe-details {
         width: 89%;
         height: 51%;
-        font-size: 17px;
+        font-size: 16px;
     }
 
     .recipe-close-btn {
